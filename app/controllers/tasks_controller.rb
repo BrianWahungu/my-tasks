@@ -22,22 +22,22 @@ class TasksController < ApplicationController
         end
       end
 
+      # def update
+      #   task = user.tasks.find(params[:id]).update(task_params)
+      #   if task
+      #       app_response(data: { info: 'updated task successfully' })
+      #   else
+      #       app_response(message: 'failed', data: { info: 'something went wrong. could not update task' }, status: :unprocessable_entity)
+      #   end
+      # end
       def update
-        task = user.tasks.find(params[:id]).update(task_params)
-        if task
-            app_response(data: { info: 'updated task successfully' })
+        task = Task.find(params[:id])
+        if task.update(task_params)
+          render json: task, status: :ok
         else
-            app_response(message: 'failed', data: { info: 'something went wrong. could not update task' }, status: :unprocessable_entity)
+          render json: task.errors, status: :unprocessable_entity
         end
       end
-      # def update
-    #     task = Task.find(params[:id])
-    #     if task.update(task_params)
-    #       render json: task, status: :ok
-    #     else
-    #       render json: task.errors, status: :unprocessable_entity
-    #     end
-    #   end
 
 
       def destroy
