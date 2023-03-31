@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task_id: 1
+  reminder_date: 2023-03-28 14:39:34
+  reminder_message: MyText
+
+two:
+  task_id: 1
+  reminder_date: 2023-03-28 14:39:34
+  reminder_message: MyText
