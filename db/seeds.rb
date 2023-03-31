@@ -24,7 +24,7 @@ categories = Category.create([
     priority: rand(1..5),
     user: User.all.sample,
     category: categories.sample,
-    language: "English"
+    # language: "English"
   )
 end
 # Create reminders for tasks

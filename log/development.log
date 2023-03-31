@@ -2393,3 +2393,144 @@ app/controllers/tasks_controller.rb:26:in `update'
   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jermaine@goodwin.io"], ["LIMIT", 1]]
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users" for 127.0.0.1 at 2023-03-31 16:30:39 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:42:in `index'
+Completed 200 OK in 104ms (Views: 37.1ms | ActiveRecord: 2.7ms | Allocations: 17371)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "zackary_graham@macejkovic.name"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lucius_watsica@nitzsche.co"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "xavier.mclaughlin@aufderhar.io"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wayne_robel@jenkins-green.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "loise@hayes.co"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "marni_cummerata@vandervort-tillman.io"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mauricio@weimann-schmeler.biz"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "bong_runolfsson@west-smith.co"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "pasquale@mclaughlin.org"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dominick@mraz.org"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sit dicta nostrum."], ["description", "Voluptas repellendus cum. Ea assumenda dolorum."], ["due_date", "2023-04-04"], ["status", "in progress"], ["priority", 4], ["user_id", 43], ["category_id", nil], ["created_at", "2023-03-31 13:38:08.645162"], ["updated_at", "2023-03-31 13:38:08.645162"]]
+  [1m[36mTRANSACTION (191.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vel ut recusandae."], ["description", "Corporis officiis sunt. Quis magni molestiae."], ["due_date", "2023-04-16"], ["status", "in progress"], ["priority", 2], ["user_id", 1], ["category_id", nil], ["created_at", "2023-03-31 13:38:08.854645"], ["updated_at", "2023-03-31 13:38:08.854645"]]
+  [1m[36mTRANSACTION (150.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dolor architecto ea."], ["description", "Totam eligendi id. Est voluptatem adipisci."], ["due_date", "2023-04-02"], ["status", "in progress"], ["priority", 4], ["user_id", 39], ["category_id", nil], ["created_at", "2023-03-31 13:38:09.016701"], ["updated_at", "2023-03-31 13:38:09.016701"]]
+  [1m[36mTRANSACTION (143.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Voluptatem atque id."], ["description", "Quo perferendis aspernatur. Sint qui laboriosam."], ["due_date", "2023-04-15"], ["status", "completed"], ["priority", 2], ["user_id", 27], ["category_id", nil], ["created_at", "2023-03-31 13:38:09.187774"], ["updated_at", "2023-03-31 13:38:09.187774"]]
+  [1m[36mTRANSACTION (128.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTask Create (1.8ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Est illum nam."], ["description", "Qui ea consequatur. Aperiam autem qui."], ["due_date", "2023-04-05"], ["status", "in progress"], ["priority", 4], ["user_id", 58], ["category_id", nil], ["created_at", "2023-03-31 13:38:09.325431"], ["updated_at", "2023-03-31 13:38:09.325431"]]
+  [1m[36mTRANSACTION (142.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laboriosam rerum ad."], ["description", "Omnis et sint. Sed aliquam vero."], ["due_date", "2023-04-21"], ["status", "completed"], ["priority", 3], ["user_id", 5], ["category_id", nil], ["created_at", "2023-03-31 13:38:09.479690"], ["updated_at", "2023-03-31 13:38:09.479690"]]
+  [1m[36mTRANSACTION (256.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTask Create (1.1ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sunt sapiente nobis."], ["description", "Sed at nesciunt. In est delectus."], ["due_date", "2023-04-17"], ["status", "pending"], ["priority", 3], ["user_id", 46], ["category_id", nil], ["created_at", "2023-03-31 13:38:09.747592"], ["updated_at", "2023-03-31 13:38:09.747592"]]
+  [1m[36mTRANSACTION (140.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vero est sint."], ["description", "Reprehenderit vitae est. Aliquam nesciunt veniam."], ["due_date", "2023-04-12"], ["status", "completed"], ["priority", 4], ["user_id", 60], ["category_id", nil], ["created_at", "2023-03-31 13:38:09.900894"], ["updated_at", "2023-03-31 13:38:09.900894"]]
+  [1m[36mTRANSACTION (146.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Possimus velit vero."], ["description", "Laboriosam ut sint. Ratione cum eum."], ["due_date", "2023-04-01"], ["status", "completed"], ["priority", 2], ["user_id", 12], ["category_id", nil], ["created_at", "2023-03-31 13:38:10.059384"], ["updated_at", "2023-03-31 13:38:10.059384"]]
+  [1m[36mTRANSACTION (121.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dolor quis quo."], ["description", "Id architecto sed. Voluptatem quia aut."], ["due_date", "2023-04-17"], ["status", "pending"], ["priority", 3], ["user_id", 23], ["category_id", nil], ["created_at", "2023-03-31 13:38:10.188618"], ["updated_at", "2023-03-31 13:38:10.188618"]]
+  [1m[36mTRANSACTION (157.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReminder Create (0.6ms)[0m  [1m[32mINSERT INTO "reminders" ("task_id", "reminder_date", "reminder_message", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task_id", 10], ["reminder_date", "2023-04-07 09:56:24.512319"], ["reminder_message", "Molestias est est dicta neque."], ["created_at", "2023-03-31 13:38:10.380379"], ["updated_at", "2023-03-31 13:38:10.380379"]]
+  [1m[36mTRANSACTION (140.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReminder Create (0.4ms)[0m  [1m[32mINSERT INTO "reminders" ("task_id", "reminder_date", "reminder_message", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task_id", 20], ["reminder_date", "2023-04-06 20:13:36.851405"], ["reminder_message", "Magnam quidem aut facere vel."], ["created_at", "2023-03-31 13:38:10.531670"], ["updated_at", "2023-03-31 13:38:10.531670"]]
+  [1m[36mTRANSACTION (158.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReminder Create (0.4ms)[0m  [1m[32mINSERT INTO "reminders" ("task_id", "reminder_date", "reminder_message", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task_id", 35], ["reminder_date", "2023-03-31 19:40:14.735211"], ["reminder_message", "Cumque modi quas odit quibusdam."], ["created_at", "2023-03-31 13:38:10.701167"], ["updated_at", "2023-03-31 13:38:10.701167"]]
+  [1m[36mTRANSACTION (144.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReminder Create (0.3ms)[0m  [1m[32mINSERT INTO "reminders" ("task_id", "reminder_date", "reminder_message", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task_id", 10], ["reminder_date", "2023-03-31 19:44:00.356847"], ["reminder_message", "Sunt velit sint quo corporis."], ["created_at", "2023-03-31 13:38:10.853575"], ["updated_at", "2023-03-31 13:38:10.853575"]]
+  [1m[36mTRANSACTION (136.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReminder Create (0.4ms)[0m  [1m[32mINSERT INTO "reminders" ("task_id", "reminder_date", "reminder_message", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task_id", 40], ["reminder_date", "2023-04-02 21:04:35.883884"], ["reminder_message", "Consequuntur esse non voluptas molestiae."], ["created_at", "2023-03-31 13:38:10.998262"], ["updated_at", "2023-03-31 13:38:10.998262"]]
+  [1m[36mTRANSACTION (136.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReminder Create (0.3ms)[0m  [1m[32mINSERT INTO "reminders" ("task_id", "reminder_date", "reminder_message", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task_id", 33], ["reminder_date", "2023-04-03 13:31:31.145020"], ["reminder_message", "Amet repellat est quam hic."], ["created_at", "2023-03-31 13:38:11.141425"], ["updated_at", "2023-03-31 13:38:11.141425"]]
+  [1m[36mTRANSACTION (137.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReminder Create (0.3ms)[0m  [1m[32mINSERT INTO "reminders" ("task_id", "reminder_date", "reminder_message", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task_id", 11], ["reminder_date", "2023-04-06 12:08:15.689090"], ["reminder_message", "Aut maiores ut harum et."], ["created_at", "2023-03-31 13:38:11.286430"], ["updated_at", "2023-03-31 13:38:11.286430"]]
+  [1m[36mTRANSACTION (137.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReminder Create (0.3ms)[0m  [1m[32mINSERT INTO "reminders" ("task_id", "reminder_date", "reminder_message", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task_id", 19], ["reminder_date", "2023-04-04 21:45:46.635770"], ["reminder_message", "Impedit nostrum provident maiores aspernatur."], ["created_at", "2023-03-31 13:38:11.430844"], ["updated_at", "2023-03-31 13:38:11.430844"]]
+  [1m[36mTRANSACTION (137.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReminder Create (0.3ms)[0m  [1m[32mINSERT INTO "reminders" ("task_id", "reminder_date", "reminder_message", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task_id", 12], ["reminder_date", "2023-04-02 08:59:50.049905"], ["reminder_message", "Dicta laborum deserunt fugit quisquam."], ["created_at", "2023-03-31 13:38:11.574747"], ["updated_at", "2023-03-31 13:38:11.574747"]]
+  [1m[36mTRANSACTION (149.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReminder Create (0.4ms)[0m  [1m[32mINSERT INTO "reminders" ("task_id", "reminder_date", "reminder_message", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task_id", 10], ["reminder_date", "2023-04-06 08:52:29.905819"], ["reminder_message", "Voluptatem qui maxime consequuntur nihil."], ["created_at", "2023-03-31 13:38:11.730389"], ["updated_at", "2023-03-31 13:38:11.730389"]]
+  [1m[36mTRANSACTION (137.4ms)[0m  [1m[36mcommit transaction[0m
